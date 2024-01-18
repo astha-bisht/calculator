@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>CALCULATOR</title>
+   <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+    <div class="frame">
+        <p class="heading">CALCULATOR</p>
+        <div class="display">
+            <input type="text" id="display" disabled>
+        </div>
+        <br>
+        <div class="btn-group">
+            <input type="button" value="9" class="btn" onclick="display.value +='9'">
+            <input type="button" value="8" class="btn" onclick="display.value +='8'">
+            <input type="button" value="7" class="btn" onclick="display.value +='7'">
+            <input type="button" value="+" class="btn" onclick="display.value +='+'">
+
+        </div>
+        <div class="btn-group">
+            <input type="button" value="6" class="btn" onclick="display.value +='6'">
+            <input type="button" value="5" class="btn" onclick="display.value +='5'">
+            <input type="button" value="4" class="btn" onclick="display.value +='4'">
+            <input type="button" value="-" class="btn" onclick="display.value +='-'">
+
+        </div>
+        <div class="btn-group">
+            <input type="button" value="3" class="btn" onclick="display.value +='3'">
+            <input type="button" value="2" class="btn" onclick="display.value +='2'">
+            <input type="button" value="1" class="btn" onclick="display.value +='1'">
+            <input type="button" value="*" class="btn" onclick="display.value +='*'">
+
+        </div>
+        <div class="btn-group">
+            <input type="button" value="C" class="btn" onclick="display.value =''">
+            <input type="button" value="0" class="btn" onclick="display.value +='0'">
+            <input type="button" value="/" class="btn" onclick="display.value +='/'">
+            <input type="button" value="=" class="btn" onclick="display.value=eval(display.value)">
+
+        </div>
+    </div>
+    <script src="demo.js"></script>
+</body>
+</html>
